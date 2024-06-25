@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctame | María Isabel Jiménez</title>
+    <link rel="shortcut icon" href="/Portafolio/navegador.png" type="image/x-icon">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="styles.css"/>  
+    
+    </head>
+    <body>
+
+      <header>
+        <nav class="navigation-bar">
+        <ul>
+            <li class="navigation-item"><a class="link" href="index.html">Inicio</a></li>
+            <li class="navigation-item"><a class="link" href="about.html">Acerca de</a></li>
+            <li class="navigation-item"><a class="link" href="contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <h1>María Isabel Jiménez Portafolio</h1>
+    </header>
+    <div class="formulario">
+<h1>¡Contáctame!</h1>
+  
+      <h2>Datos de Contacto</h2>
+      <p><strong>Nombre:</strong> María Isabel Jiménez Correa</p>
+      <p><strong>Telefono:</strong> 300 3536585</p>
+      <p><strong>Email:</strong> mijimenezc@eafit.edu.co </p>
+  
+      <h2>Formulario de Contacto</h2>
+      <form method="post" action="https://fake-backend.sample/contact">
+        <p>
+          Los campos presedidos por un (*) son obligatorios
+        </p>
+        <fieldset>
+          <legend>Datos personales</legend>
+          <label for="u-firtname">*Nombre: </label>
+          <input id="u-firstname" name="u-firstname" type="text" required />
+          <label for="u-lastname">Apellido: </label>
+          <input id="u-lastname" name="u-lastname" type="text" />
+          <br />
+          <label>*Genero: </label>
+          <input id="u-gender--male" name="u-gender" type="radio" value="male"
+            required />
+          <label for="u-gender--male">Masculino</label>
+          <input id="u-gender--female" name="u-gender" type="radio" value="female"
+            required />
+          <label for="u-gender--female">Femenino</label>
+          <input id="u-gender--no-binary" name="u-gender" type="radio"
+            value="no-binary" required />
+          <label for="u-gender--no-binary">No binario</label>
+        </fieldset>
+        <fieldset>
+          <legend>Datos de contacto</legend>
+          <label for="u-email">*Correo electrónico: </label>
+          <input id="u-email" name="u-email" type="email" required />
+          <br />
+          <label for="u-tel">Teléfono: </label>
+          <input id="u-tel" name="u-tel" type="tel" placeholder="322 444 2233"
+            pattern="[0-9]{3} [0-9]{3} [0-9]{4}" />
+        </fieldset>
+        <fieldset>
+          <label for="f-type">¿En qué puedo ayudar?</label>
+          <br />
+          <select id="f-type" name="f-type" required>
+            <option value="">Selecciona una opción...</option>
+            <option value="greets">Saludo</option>
+            <option value="quotes">Cotización</option>
+            <option value="complaint">Queja</option>
+          </select>
+          <br />
+          <label for="f-date">¿Cuándo te puedo contactar?</label>
+          <br />
+          <input id="f-date" name="f-date" type="datetime-local" />
+          <br />
+          <label for="f-description">Cuentame más...</label>
+          <br />
+          <textarea id="f-description" name="f-description" required></textarea>
+          <br />
+          <label for="f-files">Archivos adjuntos:</label>
+          <br />
+          <input id="f-files" name="f-files" type="file" multiple />
+        </fieldset>
+        <button type="reset">Limpiar</button>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+    </body>
+</html>

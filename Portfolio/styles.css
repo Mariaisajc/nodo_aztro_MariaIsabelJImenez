@@ -1,0 +1,93 @@
+*{
+  margin: 0;  
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+  color: white;
+  font-family:'Noto Sans Variable', sans-serif;
+  font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Manrope Variable', sans-serif;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  header {
+    background-color: #5D2E46;
+    color: white;
+    height: 20vh;
+    text-align: center;
+    /*margin: 10px 0px;
+    color: white;*/
+  }
+
+
+  main{
+    height: 70vh;
+    background-color: #720d41;
+    text-align: center;
+  }
+
+  .formulario{
+    height: 80vh;
+    background-color: #720d41;
+    text-align: center;
+  }
+
+  .navigation-bar{
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    font-weight: bold;
+    
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+
+  .navigation-item {
+    display: inline-block;
+    background-color: lightgreen;
+    width: 100px;
+    height: 30px;
+    border-radius: 0.2rem;
+    color: white;
+    
+  }
+  .link{
+    color: black;
+  }
+
+  .navigation-item:hover{
+    background-color: lightblue;
+    cursor: pointer;
+  }
+  
+  
+
+  footer {
+    background-color: #5D2E46;
+    color: white;
+    height: 10vh;
+
+  }
+
+  .logo-x,
+  .logo-fb{
+    display: inline-block;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+
+  }
+  
