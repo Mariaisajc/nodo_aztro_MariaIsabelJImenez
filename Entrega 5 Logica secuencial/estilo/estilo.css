@@ -1,0 +1,42 @@
+*{
+    font-family: 'Comic Sans', cursive;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-image: url(/img/fondo_1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    text-align: center;
+    padding-top: 0px;
+    
+}
+
+.contenedor img {
+    width: 250px; 
+    height: auto; 
+    margin-left: 700px; 
+}
+
+
+.logo{
+    background-color: rgb(175, 174, 174);
+    padding: 10px;
+    margin: 10px;
+    margin-right: 600px;
+    text-align: left;
+    color: rgb(11, 11, 87);
+}
+
+.fondo{
+    background-color: rgb(24, 24, 65);
+    height: fit-content;
+    color: white;
+}
+
+
+
+

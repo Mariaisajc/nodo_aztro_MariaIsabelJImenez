@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<meta name="keywords" content="area, perimetros, diametros, figuras">
+		<meta name="description" content="Diametro, area y dimensiones de figuras geometricas">
+
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Sans+MS&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="estilo/estilo.css">
+			<script type="text/javascript" src="js/prefixfree.min.js"></script>
+			
+
+				<title>Rectangulo</title>	
+			<script src="./js/area.js"></script>
+	</head>
+		<body>
+
+		<header>
+            <div class="contenedor">
+				<img src="/img/superhero.png" alt="img Superheroe">
+                <div class="logo">
+                    <h1>Área y diámetro del rectángulo y círculo</h1>
+                </div>
+            </div>
+		</header>
+
+
+        <!-- Seleccionar figuras -->
+
+		<div class="fondo">		
+			<div class="banner" id="banners">
+				<section id="selecionar-figura">
+					
+					<h2>Elige tu figura geometrica:</h2>
+
+						<label for="rectangulo">
+						<input type="radio" name="figura" id="rectangulo"/>Rectangulo</label>
+
+						<label for="circulo">
+						<input type="radio" name="figura" id="circulo"/>Circulo</label>		
+                        
+                        <div class="boton">
+							<button id="boton-figura">Seleccionar</button>
+
+						</div>		
+
+				</section>
+			</div>
+
+
+            <!-- nueva seccion elección -->
+
+			
+
+            <div class="elegir" id="eleccion">
+                <section id="selecionar-formula">
+					
+					<h2>Elige formula:</h2>
+
+                    <p>La figura seleccionada es <span id="figura-seleccionada"></span></p>
+
+						<label for="perimetro">
+						<input type="radio" name="formula" id="perimetro"/>Perimetro</label>
+
+						<label for="area">
+						<input type="radio" name="formula" id="area"/>Área</label>		
+                        
+
+						<div class="boton">
+							<button id="boton-formula">Seleccionar</button>
+
+						</div>		
+
+				</section>
+
+            </div>
+
+            <!-- Fin nueva seccion -->
+
+
+            <!-- Seccion de datos -->
+
+			<div class="datos" id="datos">
+				<section id="selecionar-figura">
+					<h2>Ingresar datos:</h2>
+
+					<p>La formula seleccionada es <span id="formula-seleccionada"></span></p>
+
+			<div class="formu">	
+					<p>
+
+                            <label for="altura">
+                            <input type="number" name="datos" id="altura"/>Altura</label>	
+
+                            <label for="base">
+                            <input type="number" name="datos" id="base"/>Base</label>
+
+                            
+                            <div class="boton" id="boton-cal">
+                                <button id="boton-calcular">Calcular</button>
+    
+                            </div>	
+					</p>
+			</div>	
+
+
+            
+				</section>
+			</div>
+
+            <!-- Fin seccion de datos-->
+
+            <!-- Sección resultado -->
+
+			<div class="mensaje" id="mensaj">
+				<section id="mensajes">
+				
+				</section>
+			</div>
+		<footer> 
+			<div class="reinicio">
+				<section id="reiniciar">
+					<button id="boton-reiniciar">Reiniciar</button>
+				</section>
+			</div>
+				<div class="bottom-footer">
+					<p>&copy; Derechos reservados.</p>
+				</div>
+		</footer>
+        <!-- Fin Sección resultado -->
+	</div>
+		</body>
+</html>
