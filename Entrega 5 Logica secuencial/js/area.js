@@ -20,11 +20,16 @@ function selecionarFigura() {
     const inputRectangulo = document.getElementById('rectangulo');
     const inputCirculo = document.getElementById('circulo');
     const spanFiguraSelecc = document.getElementById('figura-seleccionada');
+    const imagenMostrada = document.getElementById('imagenMostrada');
 
     if (inputRectangulo.checked) {
         spanFiguraSelecc.innerHTML = 'Rectangulo';
+        imagenMostrada.src = '/img/propiedades-de-los-rectangulos.webp';
+        imagenMostrada.style.display = 'block';
     } else if (inputCirculo.checked) {
         spanFiguraSelecc.innerHTML = 'Circulo';
+        imagenMostrada.src = '/img/formula-del-area-de-un-circulo.webp';
+        imagenMostrada.style.display = 'block';
     } else {
         alert("No seleccionaste ninguna figura. Elige una y prepara los datos.");
         return;

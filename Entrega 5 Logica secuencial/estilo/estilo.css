@@ -37,6 +37,14 @@ header{
     color: white;
 }
 
-
-
-
+.imagenfigura {
+    margin-top: 10px; 
+    display: flex;
+    justify-content: center;
+}
+.figuramostrada {
+    max-width: 100%; 
+    max-height: 200px; 
+    border: 1px solid #ccc; 
+    display: none;
+}
