@@ -10,9 +10,9 @@ function iniciarCalculo() {
 
    // Ocultar boton reiniciar
 
-   let seccionCalcular = document.getElementById('boton-cal')
-   seccionCalcular.style.display = 'block'
-   
+let seccionCalcular = document.getElementById('boton-cal')
+seccionCalcular.style.display = 'block'
+
 
 }
 
@@ -26,10 +26,14 @@ function selecionarFigura() {
         spanFiguraSelecc.innerHTML = 'Rectangulo';
         imagenMostrada.src = '/img/propiedades-de-los-rectangulos.webp';
         imagenMostrada.style.display = 'block';
+        document.getElementById('datos-rectangulo').style.display = 'block';
+        document.getElementById('datos-circulo').style.display = 'none';
     } else if (inputCirculo.checked) {
         spanFiguraSelecc.innerHTML = 'Circulo';
         imagenMostrada.src = '/img/formula-del-area-de-un-circulo.webp';
         imagenMostrada.style.display = 'block';
+        document.getElementById('datos-rectangulo').style.display = 'none';
+        document.getElementById('datos-circulo').style.display = 'block';
     } else {
         alert("No seleccionaste ninguna figura. Elige una y prepara los datos.");
         return;
@@ -60,15 +64,20 @@ seccionCalcular.style.display = 'block'
 function calcularGeo() {
     const figura = document.getElementById('figura-seleccionada').innerHTML.trim().toLowerCase();
     const formula = document.querySelector('input[name="formula"]:checked').id;
-    const dato1 = parseFloat(document.getElementById('altura').value);
-    const dato2 = parseFloat(document.getElementById('base').value);
-  
-      
+    let dato1, dato2;
 
-    if (isNaN(dato1) || isNaN(dato2)) {
+    if (figura === 'rectangulo') {
+        dato1 = parseFloat(document.getElementById('altura').value);
+        dato2 = parseFloat(document.getElementById('base').value);
+    } else if (figura === 'circulo') {
+        dato1 = parseFloat(document.getElementById('radio').value);
+    }
+
+    if (isNaN(dato1) || (figura !== 'circulo' && isNaN(dato2))) {
         alert("Por favor, ingresa valores numéricos válidos.");
         return;
     }
+
 
     if (figura === 'rectangulo') {
         if (formula === 'area') {

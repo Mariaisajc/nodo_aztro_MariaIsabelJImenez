@@ -48,3 +48,7 @@ header{
     border: 1px solid #ccc; 
     display: none;
 }
+
+.circulo{
+    display: none;
+}
