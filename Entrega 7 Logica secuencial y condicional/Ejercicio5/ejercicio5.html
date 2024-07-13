@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app-ejercicio5.js"></script>
+    <title>Solución ejercicio 5</title>
+</head>
+<body><center>
+
+    <div class="liquidacion" id="liquidacion">
+    <h1>Liquidación</h1>
+    <label for="mes">Ingrese mes a liquidar:</label>
+    <select name="month" id="mes-liquidar">
+                <option value = "enero">Enero</option>
+                <option value = "febrero">Febrero</option>
+                <option value = "marzo">Marzo</option>
+                <option value = "abril">Abril</option>
+                <option value = "mayo">Mayo</option>
+                <option value = "junio">Junio</option>
+                <option value = "julio">Julio</option>
+                <option value = "agosto">Agosto</option>
+                <option value = "septiembre">Septiembre</option>
+                <option value = "octubre">Octubre</option>
+                <option value = "noviembre">Noviembre</option>
+                <option value = "diciembre">Diciembre</option>	
+    </select>
+    <br>
+    <div class="datos-empleado">
+    <label for="dias-laborados">Ingrese número de días laborados en el mes: </label>
+    <input type="number" id="dias-laborados" placeholder="Ingrese días">
+    <br>
+    <label for="horas-extras">Ingrese horas extras en el mes: </label>
+    <br>
+    <label for="horas-diurna">Diurnas: </label>
+    <input type="number" id="horas-diurna" placeholder="Hora extra diurna">
+    <br> 
+    <label for="horas-nocturna">Nocturnas: </label>
+    <input type="number" id="horas-nocturna" placeholder="Hora extra nocturna">
+    <br>
+    <label for="horas-festivo">Festivo: </label>
+    <input type="number" id="horas-festivo" placeholder="Hora extra festivo">
+    </div>
+    <br>
+    <button onclick="inicioCalculo()">Calcular</button>
+    <p>Valor sin deduccion: <span id="resultado-total"></p></label>
+    <p>Deducción por salud y pensión: <span id="deduccion"></span></p>
+    <p>Deducción alimentación: <span id="deducc-alimentacion"></span></p>
+    <p>Valor total a liquidar al empleado: <span id="resultado"></p></label>
+    
+
+    <button onclick="reiniciar()">Reiniciar</button>
+    </div></center>
+    
+</body>
+</html>

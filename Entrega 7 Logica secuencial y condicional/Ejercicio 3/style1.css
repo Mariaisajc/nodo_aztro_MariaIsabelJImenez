@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-image: url(https://st2.depositphotos.com/1387241/11862/i/450/depositphotos_118621020-stock-photo-professional-construction-worker-laying-bricks.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 0px;
+    
+}
+
+.introduccion {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+
+    & button{
+        padding: 20px;
+        font-size: 1.3rem;
+        background-color: lightsalmon;
+        border-radius: 0.5rem;
+        border: none;
+    }
+}
+
+.calcular-area {
+    display: none; 
+    padding: 20px;
+    margin: 50px;
+    background-color: #e0e0e0;
+    border: 1px solid #999;
+    font-size: 1.6rem;
+
+    & button{
+        padding: 10px;
+        font-size: 1.3rem;
+        background-color: lightsalmon;
+        border-radius: 0.5rem;
+        border: none;
+    }
+
+}
+.datos{
+    list-style: none;
+}
+
+input{
+    padding: 12px; 
+    border-radius: 4px; 
+    font-size: 1.3rem; 
+    outline: none; 
+    margin-bottom: 4px; 
+}
+
+.texto-resultado{
+    display: none;
+}
+
+section{
+    display: none;
+}

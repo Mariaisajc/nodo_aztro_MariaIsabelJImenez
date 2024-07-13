@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(salud-nutricional.jpg) ;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.introduccion {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.6rem;
+    text-align: center;
+
+
+    & button{
+        margin: 20px;
+        padding: 10px;
+        font-size: 1.3rem;
+        background-color: lightsalmon;
+        border-radius: 0.5rem;
+        border: none;
+    }
+}
+.datos-paciente [type="number"] {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px; 
+    border-radius: 4px; 
+    font-size: 1.3rem; 
+    outline: none; 
+    margin-bottom: 4px; 
+}
+
+
+.calcular-imc {
+    display: none; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.6rem;
+
+    & button{
+        padding: 10px;
+        font-size: 1.3rem;
+        background-color: lightsalmon;
+        border-radius: 0.5rem;
+        border: none;
+    }  
+}
+
+.texto-resultado{
+    display: none;
+
+}
+
+.rango-resultado{
+    display: none;
+
+}
+
+section{
+    display: none;
+}
+
+.info{
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px; 
+    margin-top: 10px; 
+    display: flex;
+    justify-content: flex-end;  
+            
+}
+

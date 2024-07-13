@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+		<script src="sol-ejercicio2.js"></script>
+    <title>Solucion ejercicio 2</title>
+    
+</head>
+<body>
+    <h2>Solución ejercicio 2</h2>
+    <p>Un agrónomo desea una forma rápida de encontrar cuantos litros de pesticida debe aplicar a un conjunto de terrenos 
+        de forma trapezoidal, si por cada metro cuadrado debe aplicar 1.5 litros de pesticida. 
+        Además le piden que determine cuantos metros de cerca eléctrica son necesarios para rodear todo el terreno.
+    </p>
+    <div class="input-group">
+        <label for="base1">Base 1:</label>
+        <input type="number" id="base1" step="any" required>
+    </div>
+    <div class="input-group">
+        <label for="base2">Base 2:</label>
+        <input type="number" id="base2" step="any" required>
+    </div>
+    <div class="input-group">
+        <label for="altura">Altura:</label>
+        <input type="number" id="altura" step="any" required>
+    </div>
+    <button onclick="calcular()">Calcular</button>
+    <div class="resultados" id="resultados"></div>
+
+</body>
+</html>
+

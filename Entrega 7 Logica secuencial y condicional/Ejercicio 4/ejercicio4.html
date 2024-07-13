@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app-ejercicio4.js"></script>
+    <title>Solución ejercicio 4</title>
+</head>
+<body>
+    <header>
+        <div class="introduccion" id="introduccion">
+
+            <h2>¡Bienvenido!</h2>
+            <p>Este programa permite conocer el Indice de Masa Corporal de su paciente de una manera rápida y eficiente.</p>
+            <button onclick="mostrarCalcularIMC()">Continuar</button>
+        </div>
+    </header>
+
+    <div class="calcular-imc" id="calcular-imc">
+    <h1>Calculadora Indice de Masa Corporal (IMC)</h1>
+    <label>Ingrese los datos del paciente: </label>
+    <br>
+    <div class="datos-paciente">
+    <label for="peso">Peso en kilogramos: </label>
+    <input type="number" id="peso" placeholder="Ingrese dato">
+    <br>
+    <label for="altura">Altura en metros: </label>
+    <input type="number" id="altura" placeholder="Ingrese dato"> 
+    </div>
+    <br>
+    <button onclick="calcularIMC()">Calcular IMC</button>
+    <p class="texto-resultado" id="texto-resultado">El Indice de Masa Corporal del paciente es: <span id="resultado"></p></label>
+    <p class="rango-resultado" id="rango-resultado">El paciente se encuentra en: <span id="resultado-imc"></span></p>
+
+    <section id="reinicio">
+    <button onclick="reiniciar()">Reiniciar</button>
+    </section>
+    
+    <div class="info">
+        <h3>Utilidad del IMC</h3>
+        <p>El IMC determina si una persona tiene un peso saludable en relación con su altura y proporciona una guía general sobre el riesgo de enfermedades relacionadas con el peso, pero debe ser considerado junto con otros factores clínicos y de salud para obtener una evaluación completa.</p>
+    </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style1.css">
+<script src="app-ejercicio3.js"></script>
+<title>Calculadora cantidad de ladrillos</title>
+
+</head>
+<body>
+    <header>
+        <div class="introduccion" id="introduccion">
+
+            <h2>¡Bienvenido!</h2>
+            <p>Acá te traigo esta herramienta práctica para el cálculo de la cantidad de ladrillos que se necesita para una pared.</p>
+            <button onclick="mostrarCalcularArea()">Continuar</button>
+        </div>
+    </header>
+
+    <div class="calcular-area" id="calcular-area">
+        <h2>Calculadora</h2>
+        <img class="formula" src="./manual-maestro-constructor-imagen-63.jpg" alt="">
+        <ul class="datos">
+            <li>
+                L= longitud del ladrillo.
+            </li>
+            <li>
+                Jh= espesor junta horizontal.
+            </li>
+            <li>
+                H= altura del ladrillo.
+            </li>
+            <li>
+                Jv= espesor junta vertical.
+            </li>
+            
+        </ul>
+        <p>
+        El calculo se realiza con base a un espesor de junta horizontal y vertical de 1.5 cm, esto con el fin de evitar desperdicio de material.
+        </p>
+        
+    <div class="datos-pared">
+        <label for="lomgitud-pared">Ingrese el largo de la pared:</label>
+        <input type="number" id="base-pared" placeholder="Medida en metros">
+    
+        <label for="altura-pared">Ingrese la altura de la pared:</label>
+        <input type="number" id="altura-pared" placeholder="Medida en metros">
+    </div>
+    <br>
+    <div class="datos-ladrillo">
+        <label for="lomgitud-ladrillo">Ingrese el largo del ladrillo:</label>
+        <input type="number" id="base-ladrillo" placeholder="Medida en metros">
+
+        <label for="altura-ladrillo">Ingrese la altura del ladrillo:</label>
+        <input type="number" id="altura-ladrillo" placeholder="Medida en metros">
+    </div>
+
+        <div class="boton" id="boton-cal">
+            <br>
+            <button onclick="calcularArea()" id="boton-calcular">Calcular</button>
+            <p class="texto-resultado" id="texto-resultado">La cantidad de ladrillos necesarios son: <span id="boton"></span></p>
+            <section id="reinicio">
+            <button onclick="reiniciar()">Reiniciar</button>
+            </section>
+        </div>
+    </div>
+    
+
+</body>
+</html>
