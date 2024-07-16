@@ -21,3 +21,17 @@ function inicioCalculo(){
     document.getElementById('resultado').innerHTML = '$' + Math.round(calculoLiquidacion);
 
 }
+
+function reiniciar(){
+    document.getElementById('dias-laborados').value="";
+    document.getElementById('horas-diurna').value="";
+    document.getElementById('horas-nocturna').value="";
+    document.getElementById('horas-festivo').value="";
+
+    document.getElementById('resultado-total').innerHTML ="";
+    document.getElementById('deduccion').innerHTML ="";
+    document.getElementById('deducc-alimentacion').innerHTML ="";
+    document.getElementById('resultado').innerHTML ="";
+
+
+}
