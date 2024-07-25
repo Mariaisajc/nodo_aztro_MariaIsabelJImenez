@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@200..700&display=swap');
+
+
+$primario: #8841DA;
+$secundario: #3F579A;
+$oscuro: #333333;
+$gris: #aeadad;
+$textwhite: #fff;
+$color-text-btn: #fff;
+$fuente1:"Oswald", sans-serif;
+$fuente2: "Lato", sans-serif;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin estilos-texto($color: #1bf41b, $t-letra: 5px, $tipo-letra: 'Arial') {
+    font-family: $tipo-letra;
+    color: $color;
+    font-size: $t-letra;
+    text-transform: uppercase;
+    text-align: center;
+}
